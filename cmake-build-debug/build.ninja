@@ -41,47 +41,41 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/lorenzo/Desktop/TopDownRecursiveParser/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target TopDownRecursiveParser-lexer.cc
+# Object build statements for EXECUTABLE target TopDownRecursiveParser-lexer.h
 
 
 #############################################
-# Order-only phony target for TopDownRecursiveParser-lexer.cc
+# Order-only phony target for TopDownRecursiveParser-lexer.h
 
-build cmake_object_order_depends_target_TopDownRecursiveParser-lexer.cc: phony || CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
+build cmake_object_order_depends_target_TopDownRecursiveParser-lexer.h: phony || CMakeFiles/TopDownRecursiveParser-lexer.h.dir
 
-build CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/inputbuf.cc.o: CXX_COMPILER__TopDownRecursiveParser-lexer.2ecc_unscanned_Debug /home/lorenzo/Desktop/TopDownRecursiveParser/inputbuf.cc || cmake_object_order_depends_target_TopDownRecursiveParser-lexer.cc
-  DEP_FILE = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/inputbuf.cc.o.d
+build CMakeFiles/TopDownRecursiveParser-lexer.h.dir/TopDownRecursiveParser-lexer.cc.o: CXX_COMPILER__TopDownRecursiveParser-lexer.2eh_unscanned_Debug /home/lorenzo/Desktop/TopDownRecursiveParser/TopDownRecursiveParser-lexer.cc || cmake_object_order_depends_target_TopDownRecursiveParser-lexer.h
+  DEP_FILE = CMakeFiles/TopDownRecursiveParser-lexer.h.dir/TopDownRecursiveParser-lexer.cc.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
-  OBJECT_FILE_DIR = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
+  OBJECT_DIR = CMakeFiles/TopDownRecursiveParser-lexer.h.dir
+  OBJECT_FILE_DIR = CMakeFiles/TopDownRecursiveParser-lexer.h.dir
 
-build CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/parser.cc.o: CXX_COMPILER__TopDownRecursiveParser-lexer.2ecc_unscanned_Debug /home/lorenzo/Desktop/TopDownRecursiveParser/parser.cc || cmake_object_order_depends_target_TopDownRecursiveParser-lexer.cc
-  DEP_FILE = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/parser.cc.o.d
+build CMakeFiles/TopDownRecursiveParser-lexer.h.dir/inputbuf.cc.o: CXX_COMPILER__TopDownRecursiveParser-lexer.2eh_unscanned_Debug /home/lorenzo/Desktop/TopDownRecursiveParser/inputbuf.cc || cmake_object_order_depends_target_TopDownRecursiveParser-lexer.h
+  DEP_FILE = CMakeFiles/TopDownRecursiveParser-lexer.h.dir/inputbuf.cc.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
-  OBJECT_FILE_DIR = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
-
-build CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/symboltable.cpp.o: CXX_COMPILER__TopDownRecursiveParser-lexer.2ecc_unscanned_Debug /home/lorenzo/Desktop/TopDownRecursiveParser/symboltable.cpp || cmake_object_order_depends_target_TopDownRecursiveParser-lexer.cc
-  DEP_FILE = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/symboltable.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
-  OBJECT_FILE_DIR = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
+  OBJECT_DIR = CMakeFiles/TopDownRecursiveParser-lexer.h.dir
+  OBJECT_FILE_DIR = CMakeFiles/TopDownRecursiveParser-lexer.h.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TopDownRecursiveParser-lexer.cc
+# Link build statements for EXECUTABLE target TopDownRecursiveParser-lexer.h
 
 
 #############################################
-# Link the executable TopDownRecursiveParser-lexer.cc
+# Link the executable TopDownRecursiveParser-lexer.h
 
-build TopDownRecursiveParser-lexer.cc: CXX_EXECUTABLE_LINKER__TopDownRecursiveParser-lexer.2ecc_Debug CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/inputbuf.cc.o CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/parser.cc.o CMakeFiles/TopDownRecursiveParser-lexer.cc.dir/symboltable.cpp.o
+build TopDownRecursiveParser-lexer.h: CXX_EXECUTABLE_LINKER__TopDownRecursiveParser-lexer.2eh_Debug CMakeFiles/TopDownRecursiveParser-lexer.h.dir/TopDownRecursiveParser-lexer.cc.o CMakeFiles/TopDownRecursiveParser-lexer.h.dir/inputbuf.cc.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/TopDownRecursiveParser-lexer.cc.dir
+  OBJECT_DIR = CMakeFiles/TopDownRecursiveParser-lexer.h.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = TopDownRecursiveParser-lexer.cc
-  TARGET_PDB = TopDownRecursiveParser-lexer.cc.dbg
+  TARGET_FILE = TopDownRecursiveParser-lexer.h
+  TARGET_PDB = TopDownRecursiveParser-lexer.h.dbg
 
 
 #############################################
@@ -117,7 +111,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/lorenzo/Desktop/TopDownRecursiveParser/cmake-build-debug
 
-build all: phony TopDownRecursiveParser-lexer.cc
+build all: phony TopDownRecursiveParser-lexer.h
 
 # =============================================================================
 # Built-in targets

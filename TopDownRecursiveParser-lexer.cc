@@ -22,13 +22,21 @@ string reserved[] = { "END_OF_FILE" ,
 };
 
 #define KEYWORDS_COUNT 2
-string keyword[] = { "public ", "private"};
+string keyword[] = { "public", "private"};
 
 void Token::Print()
 {
     cout << "{" << this->lexeme << " , "
          << reserved[(int) this->token_type] << " , "
          << this->line_no << "}\n";
+}
+
+LexicalAnalyzer::LexicalAnalyzer()
+{
+    this->line_no = 1;
+    tmp.lexeme = "";
+    tmp.line_no = 1;
+    tmp.token_type = ERROR;
 }
 
 bool ichar_equals(char a, char b)
@@ -41,13 +49,7 @@ bool iequals(const std::string& a, const std::string& b)
     return std::equal(a.begin(), a.end(), b.begin(), b.end(), ichar_equals);
 }
 
-LexicalAnalyzer::LexicalAnalyzer()
-{
-    this->line_no = 1;
-    tmp.lexeme = "";
-    tmp.line_no = 1;
-    tmp.token_type = ERROR;
-}
+
 
 bool LexicalAnalyzer::SkipSpace()
 {
@@ -144,8 +146,10 @@ Token LexicalAnalyzer::ScanIdOrKeyword()
         tmp.line_no = line_no;
         if (IsKeyword(tmp.lexeme))
             tmp.token_type = FindKeywordIndex(tmp.lexeme);
-        else
+        else if(isalpha(tmp.lexeme[0]) && std::all_of(tmp.lexeme.begin(),tmp.lexeme.end(),[](char c){return(isalnum(c));}))
             tmp.token_type = ID;
+        else
+            tmp.token_type = ERROR;
     }
     else
     {
@@ -202,8 +206,6 @@ Token LexicalAnalyzer::GetToken()
     input.GetChar(c);
     switch (c)
     {
-
-
         case '=':
             tmp.token_type = EQUAL;
             return tmp;
@@ -230,7 +232,9 @@ Token LexicalAnalyzer::GetToken()
                 return ScanIdOrKeyword();
             }
              else if (input.EndOfInput())
-                tmp.token_type = END_OF_FILE;
+             {
+                 tmp.token_type = END_OF_FILE;
+             }
              else
                 tmp.token_type = ERROR;
 
@@ -238,7 +242,7 @@ Token LexicalAnalyzer::GetToken()
     }
 }
 
-/*int main()
+int main()
 {
     LexicalAnalyzer lexer;
     Token token;
@@ -256,4 +260,3 @@ Token LexicalAnalyzer::GetToken()
 
 
 }
-*/

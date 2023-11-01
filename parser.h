@@ -4,12 +4,11 @@
 
 #ifndef TOPDOWNRECURSIVEPARSER_PARSER_H
 #define TOPDOWNRECURSIVEPARSER_PARSER_H
-
+/*
 class ParserFunctions
         {
                 public:
-                LexicalAnalyzer lexer;
-                Token token;
+
                 void parse_program();
                 void parse_globalvars();
                 void parse_varslist();
@@ -21,3 +20,5 @@ class ParserFunctions
         };
 
 #endif //TOPDOWNRECURSIVEPARSER_PARSER_H
+
+ */

@@ -40,7 +40,7 @@
  *
  * )
  */
-
+/*
 //Grammar for Program
 void ParserFunctions::parse_program()
 {
@@ -50,6 +50,15 @@ void ParserFunctions::parse_program()
 
 void ParserFunctions::parse_globalvars()
 {
+    /*if ( lexer.GetToken() == END_OF_FILE)
+
+    else if (var_list )
+
+    else
+    {
+        void syntax_error();
+
+    }
 
 };
 
@@ -100,9 +109,11 @@ void syntax_error()
 }
 
 
+*/
 
 
-int main()
+
+/*int main()
 {
 
 
@@ -111,3 +122,4 @@ int main()
 
 
 }
+ */
