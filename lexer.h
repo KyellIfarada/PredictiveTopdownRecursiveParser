@@ -8,7 +8,6 @@
 
 #include <vector>
 #include <string>
-
 #include "inputbuf.h"
 
 // ------- token types -------------------
@@ -32,7 +31,7 @@ class LexicalAnalyzer {
     TokenType UngetToken(Token);
     LexicalAnalyzer();
 
-  private:
+
     std::vector<Token> tokens;
     int line_no;
     Token tmp;
@@ -42,7 +41,6 @@ class LexicalAnalyzer {
     bool IsKeyword(std::string);
     TokenType FindKeywordIndex(std::string);
     Token ScanIdOrKeyword();
-    Token ScanNumber();
     bool SkipComment();
 };
 

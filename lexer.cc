@@ -9,11 +9,8 @@
 #include <vector>
 #include <string>
 #include <cctype>
-#include <variant>
 #include <algorithm>
-#include "TopDownRecursiveParser-lexer.h"
-#include "inputbuf.h"
-#include "stdlib.h"
+#include "lexer.h"
 
 using namespace std;
 
@@ -121,9 +118,7 @@ bool LexicalAnalyzer::SkipComment()
 
 }
 
-
 //--------------------------
-
 
 //DO NOT EDIT ScanIdOrKeyword
 Token LexicalAnalyzer::ScanIdOrKeyword()
@@ -242,21 +237,8 @@ Token LexicalAnalyzer::GetToken()
     }
 }
 
-int main()
-{
-    LexicalAnalyzer lexer;
-    Token token;
-
-    token = lexer.GetToken();
-    token.Print();
 
 
 
-    while (token.token_type != END_OF_FILE)
-    {
-        token = lexer.GetToken();
-        token.Print();
-    }
 
 
-}
