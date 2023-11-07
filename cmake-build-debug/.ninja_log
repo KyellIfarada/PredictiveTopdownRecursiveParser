@@ -1,0 +1,6 @@
+# ninja log v5
+0	998	1699311979472551711	CMakeFiles/TopDownRecursiveParser.dir/parser.cc.o	67e707e7db893737
+3	1417	1699204438278871756	CMakeFiles/MyLibrary.dir/TopDownRecursiveParser-lexer.cc.o	d9f92b86e0a79b29
+1417	1658	1699204438514871755	libMyLibrary.so	1b93e38e3fa9b19e
+1	1044	1699204437898871757	CMakeFiles/MyLibrary.dir/inputbuf.cc.o	45f3112af97a44bc
+998	1125	1699311979600615711	TopDownRecursiveParser	4b93ee8fbe7fefbf
