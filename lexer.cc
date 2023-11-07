@@ -23,9 +23,7 @@ string keyword[] = { "public", "private"};
 
 void Token::Print()
 {
-    cout << "{" << this->lexeme << " , "
-         << reserved[(int) this->token_type] << " , "
-         << this->line_no << "}\n";
+    cout << "{" << this->lexeme << " , "<< this->line_no << "}\n";
 }
 
 LexicalAnalyzer::LexicalAnalyzer()
